@@ -4,13 +4,16 @@ var currentDate = moment().format("dddd, MMMM Do")
 $("#currentDay").text(currentDate)
 
 
+//compare hour rows to current hour and change class accordingly 
 function trackHours() {
+    //current hour
     var currentHour = moment().hour();
 
     $(".time-block").each(function () {
         var hourRow = parseInt($(this).attr("id").split("hour")[1]);
         // console.log( hourRow, currentHour)
 
+        //conditionals comparing hour rows to current hour
         if (hourRow < currentHour) {
             $(this).addClass("past");
             $(this).removeClass("future");
@@ -55,5 +58,6 @@ $("#hour16 .description").val(localStorage.getItem("hour16"));
 $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 
+//add refresh function?
 
 
