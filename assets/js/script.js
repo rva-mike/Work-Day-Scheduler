@@ -13,7 +13,7 @@ function trackHours() {
         var hourRow = parseInt($(this).attr("id").split("hour")[1]);
         // console.log( hourRow, currentHour)
 
-        //conditionals comparing hour rows to current hour
+        //conditionals comparing hour rows to current hour and adding or removing appropriate classes
         if (hourRow < currentHour) {
             $(this).addClass("past");
             $(this).removeClass("future");
