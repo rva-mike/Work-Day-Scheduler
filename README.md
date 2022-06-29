@@ -5,6 +5,7 @@ This is a simple, responsive calendar application that allows a user to save eve
 
 ## Links
 Live URL: https://rva-mike.github.io/Work-Day-Scheduler/
+
 Repository URL: https://github.com/rva-mike/Work-Day-Scheduler
 
 # Screenshot
